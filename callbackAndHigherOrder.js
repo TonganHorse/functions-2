@@ -224,7 +224,9 @@ const getUserById = (array, id, callback) => {
   the two parameters together and return the sum.
 */
 
-// CODE HERE
+// CODE Hhere
+
+const addingFactory = num => x => num + x
 
 /*
   Now that you have addingFactory, you can create other
@@ -239,6 +241,7 @@ const getUserById = (array, id, callback) => {
 */
 
 // CODE HERE
+ let addTen = addingFactory(10)
 
 /*
   Now the inner function is stored in the addTen variable! 
@@ -251,6 +254,9 @@ const getUserById = (array, id, callback) => {
 */
 
 // CODE HERE
+console.log(addTen(20))
+console.log(addTen(30))
+
 
 /*
   Let's make another function from the addingFactory. 
@@ -264,3 +270,5 @@ const getUserById = (array, id, callback) => {
 */
 
 // CODE HERE
+const favoriteNumber = addingFactory(15)
+console.log(favoriteNumber(2))
